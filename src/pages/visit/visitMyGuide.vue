@@ -16,7 +16,7 @@
                     <f7-col >
                         <form class="good.status" style="float: right">{{good.status}}</form><br/><br>
                         <f7-button  @click="deleteGood(good.goodId)"  style="float: right">取消</f7-button>
-                        <f7-button href="visitSchoolTour/" style="float: right">开始</f7-button>
+                        <f7-button @click="startTour" style="float: right">开始</f7-button>
                     </f7-col>
                 </f7-row>
             </f7-list-item>
@@ -72,6 +72,10 @@
                 },function () {
                     return
                 });
+            },
+            startTour(){
+                console.log(new Date())
+                this.$f7router.navigate("visitSchoolTour/")
             },
         },
     }

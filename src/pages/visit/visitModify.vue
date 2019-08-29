@@ -118,6 +118,7 @@
             submit(){
                 //校验表单是否为空，写入数据库
                 console.log(this.visitPublish);
+                this.$f7router.back()
             },
             reset(){
                 this.visitPublish={

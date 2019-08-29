@@ -15,8 +15,11 @@
         </f7-list>
         <f7-block>
             <f7-row tag="p">
-                <f7-button type="submit" class="col" @click="submit" style="left: 150px">接单</f7-button>
-                <f7-button type="reset"  class="col" style="left: 50px" >放弃</f7-button>
+                <f7-button type="submit" class="col" @click="submit1" style="left: 150px">接单</f7-button>
+                <a href="#" class="back">
+                    <f7-button type="reset"  class="col" style="" >放弃</f7-button>
+                </a>
+
             </f7-row>
         </f7-block>
     </f7-page>
@@ -42,11 +45,14 @@
             submit(){
                 const f7=this.$f7
                 f7.dialog.confirm('确认要接单吗？', '系统提示',function () {
-                    f7.dialog.alert(1)
+                 f7.dialog.alert(1)
 
                 },function () {
                     return
                 });
+            },
+            submit1(){
+               this.$f7router.back()
             },
         }
     }
