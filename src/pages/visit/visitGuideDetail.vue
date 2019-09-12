@@ -15,9 +15,9 @@
         </f7-list>
         <f7-block>
             <f7-row tag="p">
-                <f7-button type="submit" class="col" @click="submit1" style="left: 150px">接单</f7-button>
+                <f7-button small type="submit" class="col" @click="submit1" style="width: 50px;left: 270px" outline color="blue">接单</f7-button>
                 <a href="#" class="back">
-                    <f7-button type="reset"  class="col" style="" >放弃</f7-button>
+                    <f7-button small type="reset"  class="col" style="width: 50px;float: right" outline color="blue">放弃</f7-button>
                 </a>
 
             </f7-row>

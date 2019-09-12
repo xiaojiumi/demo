@@ -15,8 +15,8 @@
                     </f7-col>
                     <f7-col >
                         <form class="good.status" style="float: right">{{good.status}}</form><br/><br>
-                        <f7-button  @click="deleteGood(good.goodId)"  style="float: right">取消</f7-button>
-                        <f7-button @click="startTour" style="float: right">开始</f7-button>
+                        <f7-button small @click="deleteGood(good.goodId)"  style="float: right;margin-left: 5px;" outline color="blue">取消</f7-button>
+                        <f7-button small @click="startTour" style="float: right" outline color="blue">开始</f7-button>
                     </f7-col>
                 </f7-row>
             </f7-list-item>

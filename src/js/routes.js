@@ -19,7 +19,13 @@ import visitSchoolTour from '../pages/visit/visitSchoolTour'
 import visitTourGuides from '../pages/visit/visitTourGuides'
 import visitGuideDetail from '../pages/visit/visitGuideDetail'
 import visitModify from '../pages/visit/visitModify'
-
+import interestIndex from '../pages/intersetGroop/intersetIndex'
+import intersetGroopFind from '../pages/intersetGroop/intersetGroopFind'
+import intersetGroopManage from '../pages/intersetGroop/intersetGroopManage'
+import intersetMyGroop from '../pages/intersetGroop/intersetMyGroop'
+import intersetGroupAdd from '../pages/intersetGroop/intersetGroopAdd'
+import intersetGroopApplicant from '../pages/intersetGroop/intersetGroopApplicant'
+import interestGroopInside from '../pages/intersetGroop/interestGroopInside'
 
 var routes = [
     {
@@ -112,6 +118,41 @@ var routes = [
     {
         path: '/request-and-load/map/',
         component: map,
+    },
+     {
+        path: '/interestIndex/',
+        component: interestIndex,
+         routes:[
+             {
+                path:'intersetGroopFind/',
+                 component:intersetGroopFind,
+             },
+             {
+                 path:'intersetGroopManage/',
+                 component:intersetGroopManage,
+                 routes:[
+                     {
+                         path:'intersetGroupAdd/',
+                         component:intersetGroupAdd,
+
+                     },
+                     {
+                         path:'intersetGroopApplicant/',
+                         component:intersetGroopApplicant,
+                     }
+                 ]
+             },
+             {
+                 path:'intersetMyGroop/',
+                 component:intersetMyGroop,
+                 routes:[
+                     {
+                         path:'interestGroopInside/',
+                         component:interestGroopInside,
+                     }
+                 ]
+             }
+         ]
     },
     {
         path: '/visitIndex/',

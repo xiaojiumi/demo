@@ -91,7 +91,10 @@
                     title="校园参观"
                     link="/visitIndex/"
             ></f7-list-item>
-
+            <f7-list-item
+                    title="兴趣团队"
+                    link="/interestIndex/"
+            ></f7-list-item>
             <f7-list-item>
                 <f7-list-button title="Sign" @click="alertData"></f7-list-button>
             </f7-list-item>

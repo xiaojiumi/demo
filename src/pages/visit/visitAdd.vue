@@ -81,8 +81,8 @@
         </f7-list>
         <f7-block>
             <f7-row tag="p">
-                <f7-button type="submit" class="col" @click="submit" style="left: 150px">提交</f7-button>
-                <f7-button type="reset"  class="col" @click="reset" style="left: 50px">重置</f7-button>
+                    <f7-button small type="submit" class="col" @click="submit" style="width: 50px;left: 260px" outline color="blue">提交</f7-button>
+                    <f7-button small type="reset"  class="col" @click="reset" style="width: 50px;float: right" outline color="blue">重置</f7-button>
             </f7-row>
         </f7-block>
     </f7-page>

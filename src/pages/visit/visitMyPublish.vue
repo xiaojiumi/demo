@@ -28,9 +28,9 @@
                     </f7-col>
                     <f7-col >
                         <form class="good.status" style="float: right">{{good.status}}</form><br/><br>
-                        <f7-button v-if="good.statusId>0" @click="deleteGood(good.goodId)"  style="float: right">删除</f7-button>
+                        <f7-button small v-if="good.statusId>0" @click="deleteGood(good.goodId)"  style="float: right;margin-left: 5px;" outline color="blue">删除</f7-button>
 <!--                        :href="`visitAdd/${good.goodId}/`"-->
-                            <f7-button v-if="good.statusId>0"  style="float: right" :href="`visitModify/${good.goodId}/`">修改</f7-button>
+                            <f7-button small v-if="good.statusId>0"  style="float: right" :href="`visitModify/${good.goodId}/`" outline color="blue">修改</f7-button>
 
                     </f7-col>
                 </f7-row>

@@ -14,7 +14,7 @@
                         <form class="good.additionalRequirements">{{good.additionalRequirements}}</form>
                     </f7-col>
                     <f7-col >
-                        <f7-button href="visitGuideDetail/" style="float: right;">详细</f7-button>
+                        <f7-button small href="visitGuideDetail/" style="float: right;" outline color="blue">详细</f7-button>
                     </f7-col>
                 </f7-row>
             </f7-list-item>

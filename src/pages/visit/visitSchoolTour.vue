@@ -34,7 +34,7 @@
                     <f7-col >
                         <f7-icon f7="chat_bubble" style="left:110px"></f7-icon>
                         <f7-icon f7="phone" style="float: right" @click="makeCall"></f7-icon><br><br>
-                        <f7-button  @click="deleteGood(good.goodId)"  style="float: right">结束</f7-button>
+                        <f7-button small @click="deleteGood(good.goodId)"  style="float: right" outline color="blue">结束</f7-button>
 
                     </f7-col>
                 </f7-row>

@@ -1,7 +1,7 @@
 <template>
     <f7-page :page-content="false" @page:beforeremove="onPageBeforeRemove">
         <f7-navbar title="淘一淘" back-link="Back">
-            <f7-nav-right class="nav-right">
+            <f7-nav-right class="nav-right" >
                 <f7-searchbar
                         inline
                         custom-search
